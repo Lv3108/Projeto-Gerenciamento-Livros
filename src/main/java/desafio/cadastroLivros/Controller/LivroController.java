@@ -37,7 +37,7 @@ public class LivroController {
     public Livro findById(@PathVariable Long id) {
         return service.findById(id);
     }
-    @GetMapping("/livro/{id}/buscarPorDisponivel")
+    @GetMapping("/livro/buscarPorDisponivel")
     public List<Livro> findByDisponivelTrue() {
         return service.findByDisponivelTrue();
     }
