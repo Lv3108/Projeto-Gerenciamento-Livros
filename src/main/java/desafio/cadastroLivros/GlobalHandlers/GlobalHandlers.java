@@ -26,5 +26,4 @@ public class GlobalHandlers extends ResponseEntityExceptionHandler {
                 .body(new ErrorResponse(e.getMessage()));
     }
 
-
 }

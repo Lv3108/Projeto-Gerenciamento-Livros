@@ -13,6 +13,9 @@ public class LivroDTO {
     @Size(min = 13, max = 13)
     private String isbn;
     private boolean disponivel;
+    private String username;
+    private String roles;
+    private String password;
 
     public String getTitulo() {
         return titulo;
@@ -52,5 +55,29 @@ public class LivroDTO {
 
     public void setDisponivel(boolean disponivel) {
         this.disponivel = disponivel;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

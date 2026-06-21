@@ -19,6 +19,7 @@ public class LivroController {
 
     @PostMapping("/livro")
     public Livro save(@RequestBody LivroDTO livroDTO) {
+        System.out.println("entrou no Post");
        return service.save(livroDTO);
     }
     @DeleteMapping("/livro")
@@ -32,6 +33,10 @@ public class LivroController {
     @GetMapping("/livro")
     public List<Livro> findAll() {
         return service.findAll();
+    }
+    @GetMapping("/")
+    public String bemVindo() {
+        return "Bem-vindo ao meu site!";
     }
     @GetMapping("/livro/{id}")
     public Livro findById(@PathVariable Long id) {
